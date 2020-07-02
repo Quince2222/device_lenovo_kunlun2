@@ -75,6 +75,3 @@ service charger /system/bin/charger
 
 service cvphalservice /system/bin/true
     disabled
-
-service vendor.power-hal-1-0 /system/bin/true
-    disabled
