@@ -1,9 +1,6 @@
 # Data files
 /data/display(/.*)?                 u:object_r:display_data_file:s0
 
-# Fstab
-(/system/vendor|/vendor)/etc/fstab\.qcom  u:object_r:vendor_configs_file:s0
-
 # Files in rootfs
 /bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0
 /dsp(/.*)?               u:object_r:adsprpcd_file:s0
@@ -23,6 +20,7 @@
 #/(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)?                                       u:object_r:vendor_configs_file:s0
 /(product|system/product)/vendor_overlay/[0-9]+/etc/vintf/manifest\.xml                          u:object_r:vendor_configs_file:s0
 /(product|system/product)/vendor_overlay/[0-9]+/etc/thermal-engine\.conf                         u:object_r:vendor_configs_file:s0
+/(product|system/product)/vendor_overlay/[0-9]+/etc/fstab\.qcom                                  u:object_r:vendor_configs_file:s0
 /(product|system/product)/vendor_overlay/[0-9]+/etc/wifi/WCNSS_qcom_cfg\.ini                     u:object_r:vendor_configs_file:s0
 /(product|system/product)/vendor_overlay/[0-9]+/etc/init/android.hardware.light@2.0-service.rc   u:object_r:vendor_configs_file:s0
 /(product|system/product)/vendor_overlay/[0-9]+/lib(64)?/hw                                      u:object_r:vendor_hal_file:s0

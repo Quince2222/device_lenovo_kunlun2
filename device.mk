@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+    fstab.qcom \
     init.qcom.rc \
     init.power.rc
 
